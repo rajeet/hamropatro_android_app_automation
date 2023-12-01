@@ -1,0 +1,152 @@
+appId: ${APP_ID}
+---
+
+- assertVisible:
+    text: "Hamro Patro"
+    index: 1
+- assertVisible: ${output.data.date}
+- assertVisible: "Upcoming Events"
+- assertVisible: "Scan and Pay"
+
+
+# swipe 
+- swipe:
+    start: "65%,33%"
+    end: "7%, 33%"
+    
+# calendar should be visible
+- assertVisible:
+    id: "com.hamropatro:id/calendar"
+
+- scrollUntilVisible:
+    element:
+      text: "Rashifal"
+    direction: DOWN 
+    speed: 60
+    centerElement: true
+
+- assertVisible: "Hamro Services"
+- assertVisible: "Hamro Pay"
+- assertVisible: "Jyotish"
+- assertVisible: "Doctor"
+- assertVisible: "News"
+- assertVisible: "Radio"
+- assertVisible: "Bank Rates"
+- assertVisible: "Recipe"
+- assertVisible: "Video"
+- assertVisible: "Audio"
+- assertVisible: "Rashifal"
+- assertVisible: "Kundali"
+- assertVisible: "E-Cards"
+- assertVisible: "Forex"
+- assertVisible: "Gold"
+- assertVisible: "Shahitya"
+- assertVisible: "Tali-Gali"
+- assertVisible: "Quiz"
+- assertVisible: "Notes"
+- assertVisible: "E-Learning"
+
+# assert Featured news 
+
+- scrollUntilVisible:
+    element:
+      text: "Featured News"
+    direction: DOWN 
+    speed: 60
+    centerElement: true
+
+- assertVisible: "Featured News"
+- assertVisible: "Read the news selected by our editors "
+
+- scrollUntilVisible:
+    element:
+      text: "Hamro Patro Special"
+    direction: DOWN 
+    speed: 60
+    centerElement: true
+
+- assertVisible: "Hamro Patro Special"
+- assertVisible: "Know what's new in Hamro Patro"
+
+- scrollUntilVisible:
+    element:
+      text: "More Features"
+    direction: DOWN 
+    speed: 60
+    centerElement: true
+
+
+- assertVisible: "More Features"
+- assertVisible: "Other services we provide "
+
+
+- scrollUntilVisible:
+    element:
+      text: "Trending Video"
+    direction: DOWN 
+    speed: 60
+    centerElement: true
+
+- assertVisible: "Trending Video"
+- assertVisible: "Watch what's popular in Nepal"
+
+- scrollUntilVisible:
+    element:
+      text: "Hamro Patro Health"
+    direction: DOWN 
+    speed: 60
+    centerElement: true
+
+- assertVisible: "Hamro Patro Health"
+- assertVisible: "Health articles from experts and doctors"
+
+- scrollUntilVisible:
+    element:
+      text: "Hamro Jyotish"
+    direction: DOWN 
+    speed: 60
+    centerElement: true
+
+- assertVisible: "Hamro Jyotish"
+- assertVisible: "Read articles about astrology and vastushastra"
+
+- scrollUntilVisible:
+    element:
+      text: "Hamro Sahitya"
+    direction: DOWN 
+    speed: 60
+    centerElement: true
+
+
+- assertVisible: "Hamro Sahitya"
+- assertVisible: "Find our articles and literatures in a single place  "
+
+- scrollUntilVisible:
+    element:
+      text: "Featured Podcast in Hamro Patro"
+    direction: DOWN 
+    speed: 60
+    centerElement: true
+
+- assertVisible: "Featured Podcast in Hamro Patro"
+- assertVisible: "Nepali podcasts that you need to listen today"
+
+- scrollUntilVisible:
+    element:
+      text: "Entertainment News"
+    direction: DOWN 
+    speed: 60
+    centerElement: true
+
+- assertVisible: "Entertainment News"
+- assertVisible: "Read latest entertainment news in Hamro Patro"
+
+- scrollUntilVisible:
+    element:
+      text: "Sports News"
+    direction: DOWN 
+    speed: 60
+    centerElement: true
+
+- assertVisible: "Sports News"
+- assertVisible: "Read latest sports news in Hamro Patro"

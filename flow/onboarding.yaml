@@ -1,0 +1,42 @@
+appId: ${APP_ID}
+---
+- assertVisible: "Welcome to\nHamro Patro"
+
+- assertVisible:
+    id: "com.hamropatro:id/imgHeader"
+
+# assert language selector should be visible
+- assertVisible: "SELECT LANGUAGE"
+
+- assertVisible: "English"
+- assertVisible: "नेपाली"
+- assertVisible: "नेपालभाषा"
+- assertVisible: "भोजपुरी"
+- assertVisible: "मैथिली"
+- assertVisible: "डोटेली"
+
+
+- tapOn: "English"
+- tapOn: "CONTINUE"
+- assertVisible: "तिथि मिति र चाडपर्वहरू"
+- assertVisible: "पञ्चाङ्ग सहितको एउटा पूर्ण पात्रो रिति-तिथि संस्कृति, चाडबाडबारे\
+    \ सम्पूर्ण जानकारी साथमा विशेष दिन, सार्वजनिक बिदा तथा शुभ-साइत"
+- tapOn: "CONTINUE"
+- assertVisible: "Hamro Radio"
+- assertVisible: "A common platform of more than 200 Nepali radios and 100 online\
+    \ radios."
+- tapOn: "CONTINUE"
+- assertVisible: "Taja Samachar"
+- assertVisible: "Updated news and an aggregator of relevant news and trustworthy\
+    \ reviews of contemporary glocal issues."
+- tapOn: "CONTINUE"
+- assertVisible: "Unique apps; but much convenience"
+- assertVisible: "Today's Horoscope"
+- assertVisible: "Hamro Audio"
+- assertVisible: "Nepali Forex"
+- assertVisible: "Blog / Literature"
+- assertVisible: "Nepali E-Cards"
+- assertVisible: "Tarkari Bazaar"
+- assertVisible: "Gold - Silver Rate"
+- assertVisible: "Many More"
+- tapOn: "LET'S START"
